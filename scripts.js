@@ -44,7 +44,8 @@ const addMarker = (id) => {
   console.log(`Therefore, a  "${currentMarker}"  should be placed in the square with the id:  ${id}`)
   
   // @TODO-2: Build a line of code that will set the innerHTML property of the element that was clicked to the "currentMarker"
-  
+  const box = document.getElementById(id)
+  box.innerHTML = `${currentMarker}`
   // @TODO-2.5: MIX & MATCH, You will need the following pieces of code to build that line:
   // = currentMarker
   // .getElementById(id)
@@ -80,7 +81,7 @@ const changeMarker = () => {
 
 
 
-
+const squares = document.getElementsByTagName("TD")
 // This "resetBoard" function is called when the user clicks on the "Restart" button.
 const resetBoard = () => {
   
